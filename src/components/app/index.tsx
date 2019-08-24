@@ -17,7 +17,6 @@ const App: React.FC = () => {
         <meta name="description" content="Litvan collective studio"/>
         <meta name="keywords" content="HTML,CSS,XML,JavaScript"/>
         <meta name="author" content="Ivan Litovchenko"/>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
       </Helmet>
       <HomeNav/>
       <Router>
