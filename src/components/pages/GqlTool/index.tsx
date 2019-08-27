@@ -3,6 +3,8 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import InputForm, { FormValues } from "./InputForm";
+import Button from "react-bootstrap/Button";
+import copy from "clipboard-copy";
 
 interface ParsedJson {
   query: string,
@@ -14,7 +16,7 @@ const GqlTool = (props: any) => {
 
   const [formValues, setValues] = useState<FormValues>({});
 
-  let query = null;
+  let query: string | null = null;
   let variables = null;
 
   if (formValues.gqlInput !== undefined) {
@@ -29,6 +31,11 @@ const GqlTool = (props: any) => {
         <Row className={"justify-content-center"}>
           <Col lg={8}>
             <InputForm onSubmit={setValues}/>
+            <Button variant="info" onClick={() => {
+              copy(query || "");
+            }} type="reset">
+              Copy to clipboard
+            </Button>
           </Col>
         </Row>
         {query !== null && (
