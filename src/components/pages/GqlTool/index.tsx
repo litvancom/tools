@@ -31,11 +31,13 @@ const GqlTool = (props: any) => {
         <Row className={"justify-content-center"}>
           <Col lg={8}>
             <InputForm onSubmit={setValues}/>
-            <Button variant="info" onClick={() => {
-              copy(query || "");
-            }} type="reset">
-              Copy to clipboard
-            </Button>
+            {query && (
+              <Button variant="info" onClick={() => {
+                copy(query || "");
+              }} type="reset">
+                Copy to clipboard
+              </Button>
+            )}
           </Col>
         </Row>
         {query !== null && (

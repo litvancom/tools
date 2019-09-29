@@ -6,6 +6,7 @@ import { Router } from "@reach/router";
 import "./custom.scss";
 import HomeNav from "../nav/HomeNav";
 import { Helmet } from "react-helmet";
+import CronTool from "../pages/CronTool/CronTool";
 
 
 const App: React.FC = () => {
@@ -21,6 +22,7 @@ const App: React.FC = () => {
       <HomeNav/>
       <Router>
         <GqlTool path="/"/>
+        <CronTool path={'/cron'}/>
       </Router>
     </div>
   );

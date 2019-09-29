@@ -5940,6 +5940,10 @@ last-call-webpack-plugin@^3.0.0:
     lodash "^4.17.5"
     webpack-sources "^1.1.0"
 
+later@RickCarlino/later, later@^1.1.6:
+  version "1.2.0"
+  resolved "https://codeload.github.com/RickCarlino/later/tar.gz/fc9ceb582728f75edbf9581e4f53da5fbb8cd4ac"
+
 lazy-cache@^0.2.3:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/lazy-cache/-/lazy-cache-0.2.7.tgz#7feddf2dcb6edb77d11ef1d117ab5ffdf0ab1b65"
@@ -6376,6 +6380,11 @@ mkdirp@0.5.1, mkdirp@0.5.x, mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.1:
   integrity sha1-MAV0OOrGz3+MR2fzhkjWaX11yQM=
   dependencies:
     minimist "0.0.8"
+
+moment@^2.24.0, moment@^2.8.4:
+  version "2.24.0"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
+  integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
 
 move-concurrently@^1.0.1:
   version "1.0.1"
@@ -7885,6 +7894,14 @@ pretty-format@^24.8.0:
     ansi-regex "^4.0.0"
     ansi-styles "^3.2.0"
     react-is "^16.8.4"
+
+prettycron@^0.10.0:
+  version "0.10.0"
+  resolved "https://registry.yarnpkg.com/prettycron/-/prettycron-0.10.0.tgz#10af0dfa20bbd9f6596d7fb5bb8b8546cac527bb"
+  integrity sha1-EK8N+iC72fZZbX+1u4uFRsrFJ7s=
+  dependencies:
+    later "^1.1.6"
+    moment "^2.8.4"
 
 private@^0.1.6:
   version "0.1.8"
