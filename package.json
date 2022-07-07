@@ -12,7 +12,7 @@
     "clipboard-copy": "^3.1.0",
     "formik": "^1.5.8",
     "later": "RickCarlino/later",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "prettycron": "^0.10.0",
     "react": "^16.9.0",
     "react-bootstrap": "^1.0.0-beta.12",
